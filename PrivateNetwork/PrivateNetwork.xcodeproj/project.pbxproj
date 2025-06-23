@@ -56,7 +56,7 @@
 		E9E118462C95652800D09E06 /* ConnectNoConnoctAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E118452C95652800D09E06 /* ConnectNoConnoctAnimationView.swift */; };
 		E9E118482C9588C900D09E06 /* ProductSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E118472C9588C900D09E06 /* ProductSubscriptionView.swift */; };
 		E9EB272F2CE1E44B00BB000C /* ShowTimerAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB272E2CE1E42900BB000C /* ShowTimerAlertView.swift */; };
-		E9EB27E42CE1F9B200BB000C /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB27E32CE1F9A500BB000C /* View+Extension.swift */; };
+		E9EB27E42CE1F9B200BB000C /* ViewAlert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB27E32CE1F9A500BB000C /* ViewAlert+Extension.swift */; };
 		E9EB27E62CE2008400BB000C /* ShowTimerStatusAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB27E52CE2007500BB000C /* ShowTimerStatusAlertView.swift */; };
 		E9EB27E82CE20B3D00BB000C /* ShowAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB27E72CE20B2C00BB000C /* ShowAnimationView.swift */; };
 		E9EB27EA2CE2EA0000BB000C /* ConnectTimeConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB27E92CE2E9EA00BB000C /* ConnectTimeConfigView.swift */; };
@@ -145,7 +145,7 @@
 		E9E118452C95652800D09E06 /* ConnectNoConnoctAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectNoConnoctAnimationView.swift; sourceTree = "<group>"; };
 		E9E118472C9588C900D09E06 /* ProductSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSubscriptionView.swift; sourceTree = "<group>"; };
 		E9EB272E2CE1E42900BB000C /* ShowTimerAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTimerAlertView.swift; sourceTree = "<group>"; };
-		E9EB27E32CE1F9A500BB000C /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		E9EB27E32CE1F9A500BB000C /* ViewAlert+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewAlert+Extension.swift"; sourceTree = "<group>"; };
 		E9EB27E52CE2007500BB000C /* ShowTimerStatusAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTimerStatusAlertView.swift; sourceTree = "<group>"; };
 		E9EB27E72CE20B2C00BB000C /* ShowAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnimationView.swift; sourceTree = "<group>"; };
 		E9EB27E92CE2E9EA00BB000C /* ConnectTimeConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTimeConfigView.swift; sourceTree = "<group>"; };
@@ -198,6 +198,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842F8C492E08FCCB0076D947 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84EF81832E07E41E00353054 /* Speed */,
+				84EF817F2E07E39000353054 /* Connect */,
+				84EF817E2E07E38200353054 /* AddressDetail */,
+				84EF817D2E07E37800353054 /* ServiceList */,
+				84EF81862E07E4D200353054 /* Common */,
+				84EF81852E07E43A00353054 /* Alert */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		84EF817C2E07E36600353054 /* Enter */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,7 +292,8 @@
 		84EF81842E07E42700353054 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E9EB27E32CE1F9A500BB000C /* View+Extension.swift */,
+				E95C131C2C8ADB690019DABB /* ViewExtension.swift */,
+				E9EB27E32CE1F9A500BB000C /* ViewAlert+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -410,18 +424,13 @@
 		E9338ABE2C4655DD005F33A1 /* PrivateNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				E9A387962D00594D004678B3 /* PrivateNetwork.entitlements */,
+				84EF817C2E07E36600353054 /* Enter */,
+				842F8C492E08FCCB0076D947 /* View */,
 				84EF818D2E084C6100353054 /* Font */,
 				84EF818C2E08432900353054 /* Manager */,
 				84EF818B2E0842B800353054 /* Subscription */,
-				84EF81862E07E4D200353054 /* Common */,
-				84EF81852E07E43A00353054 /* Alert */,
 				84EF81842E07E42700353054 /* Extension */,
-				84EF81832E07E41E00353054 /* Speed */,
-				84EF817F2E07E39000353054 /* Connect */,
-				84EF817E2E07E38200353054 /* AddressDetail */,
-				84EF817D2E07E37800353054 /* ServiceList */,
-				84EF817C2E07E36600353054 /* Enter */,
-				E9A387962D00594D004678B3 /* PrivateNetwork.entitlements */,
 				E9B050A92CA10AF900E98715 /* SimplePing.h */,
 				E9B050AA2CA10B3D00E98715 /* SimplePing.m */,
 				E9B050AD2CA10C6100E98715 /* PingTool.swift */,
@@ -429,7 +438,6 @@
 				E9338AC82C4655DE005F33A1 /* Assets.xcassets */,
 				E9338ACA2C4655DE005F33A1 /* LaunchScreen.storyboard */,
 				E9338ACD2C4655DE005F33A1 /* Info.plist */,
-				E95C131C2C8ADB690019DABB /* ViewExtension.swift */,
 				E9B050AC2CA10B4500E98715 /* PrivateNetwork-Bridging-Header.h */,
 			);
 			path = PrivateNetwork;
@@ -588,7 +596,7 @@
 				E9E118462C95652800D09E06 /* ConnectNoConnoctAnimationView.swift in Sources */,
 				E9338AC02C4655DD005F33A1 /* AppDelegate.swift in Sources */,
 				E9460F0F2C9D5726003D59B3 /* DataZIP.swift in Sources */,
-				E9EB27E42CE1F9B200BB000C /* View+Extension.swift in Sources */,
+				E9EB27E42CE1F9B200BB000C /* ViewAlert+Extension.swift in Sources */,
 				E95C131D2C8ADB690019DABB /* ViewExtension.swift in Sources */,
 				E9B050AE2CA10C6B00E98715 /* PingTool.swift in Sources */,
 				E95C13042C8A9E920019DABB /* AnimationLaunchScreenViewController.swift in Sources */,

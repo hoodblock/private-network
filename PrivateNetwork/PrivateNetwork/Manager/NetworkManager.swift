@@ -195,7 +195,6 @@ extension NetworkManager {
             self.freeTimeMins = 0
         }
         UserDefaults.standard.setValue(self.freeTimeMins, forKey: userdefault_free_time)
-        UserDefaults.standard.synchronize()
         UserDefaults.standard.setValue(true, forKey: userdefault_free_time_status)
         UserDefaults.standard.synchronize()
         NotificationCenter.default.post(name: .freeTimeNotification, object: nil)
@@ -205,7 +204,6 @@ extension NetworkManager {
     func addFreeTime(times: Int) {
         self.freeTimeMins += (times * 60)
         UserDefaults.standard.setValue(self.freeTimeMins, forKey: userdefault_free_time)
-        UserDefaults.standard.synchronize()
         UserDefaults.standard.setValue(true, forKey: userdefault_free_time_status)
         UserDefaults.standard.synchronize()
     }
