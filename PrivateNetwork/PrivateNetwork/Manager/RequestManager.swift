@@ -97,11 +97,8 @@ class RequestManager {
     
     lazy var regionItems: [RegionItem] = {
         let defaultRegions = [
-            ("Los Angel", "United States", "1194", "74.48.33.94", "US_LosAngel United States"),
-            ("Spokane", "United States", "1194", "199.119.138.198", "US_Spokane United States"),
             ("Buffalo", "United States", "1194", "23.94.182.57", "US_Buffalo United States"),
-            ("Falkenstein", "Germany", "1194", "23.165.200.83", "DE_Falkenstein"),
-            ("Strasbourg", "France", "1194", "45.95.172.108", "FR_Strasbourg France")
+            ("Los Angel", "United States", "1194", "74.48.33.94", "US_LosAngel United States"),
         ]
         
         return defaultRegions.map { city, country, port, ip, icon in
